@@ -19,20 +19,20 @@ const apiKey="afb5b594ff2f6b3065e4bab321948629";
         document.querySelector(".city").innerHTML=data.name;
         document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"°C";
         document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
-        document.querySelector(".wind").innerHTML=data.wind.speed+" Km/ph";
+        document.querySelector(".wind").innerHTML=data.wind.speed+" Km/h";
 
         if(data.weather[0].main=="Clouds"){
-            weatherIcon.src="/weather app/asset/images/clouds.png"
+            weatherIcon.src="images/clouds.png";
         } else if(data.weather[0].main=="Clear"){
-            weatherIcon.src="/weather app/asset/images/clear.png"
+            weatherIcon.src="images/clear.png";
         }else if(data.weather[0].main=="Drizzle"){
-            weatherIcon.src="/weather app/asset/images/drizzle.png"
+            weatherIcon.src="images/drizzle.png";
         }else if(data.weather[0].main=="Mist"){
-            weatherIcon.src="/weather app/asset/images/mist.png"
+            weatherIcon.src="images/mist.png";
         }else if(data.weather[0].main=="Rain"){
-            weatherIcon.src="/weather app/asset/images/rain.png"
+            weatherIcon.src="images/rain.png";
         }else if(data.weather[0].main=="Snow"){
-            weatherIcon.src="/weather app/asset/images/snow.png"
+            weatherIcon.src="images/snow.png";
         }
         document.querySelector(".error").style.display="none";
         document.querySelector(".weather").style.display="block";

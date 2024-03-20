@@ -106,3 +106,68 @@ p{
     margin-top: 10px;
     display: none;
 }
+
+
+/* break points */
+
+@media(max-width: 575.98px) {
+    
+    .card{
+        width: 100%;
+        padding: 35px 10px;
+    }
+
+    .search{
+        width: 70%;
+        margin-left: 6px;
+    }
+    .search button img{
+        object-fit: contain;
+        height:60px;
+        width: 60px;
+    }
+}
+
+@media  (max-width:350px){
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .search{
+        /* margin-left: 0px; */
+        margin-right: 3px;
+    }
+    .search input{
+        font-size: 10px;
+        padding-left: 15px;
+        padding-right: 4px;
+        height: 45px;
+        margin-right: -47px;
+    }
+
+    .search button{
+        height: 45px;
+        width: 45px;
+    }
+    .search button img{
+        object-fit: contain;
+        height:34px;
+        width: 45px;
+    }
+    .weather h1{
+        font-size: 30px;
+    }
+    .weather h2{
+        font-size: 25px;
+    }
+    .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
